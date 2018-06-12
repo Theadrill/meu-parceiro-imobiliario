@@ -1,0 +1,229 @@
+html body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+
+
+.logo{
+    display: flex;
+    order: 0;
+    max-width: 400px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 300px;
+}
+
+.conteudo {
+    position: relative;
+    display: inline-flex;
+    padding: 0;
+    flex-flow: row wrap;
+    order: 1;
+    max-width: 400px;
+    margin: 30px;
+}
+
+.form{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.bloco_contato{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 350px;
+    height: auto;
+}
+
+/* CONTATO */
+
+.bloco_contato{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 300px;
+    color:#000;
+    vertical-align: middle;
+}
+
+fieldset{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: auto;
+    height: auto;
+}
+
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: crimson;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: rgb(150, 0, 50);
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+.right{
+    display: block;
+    float: right;
+}
+
+
+.form-style-1 {
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+    height: auto;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 0;
+}
+.form-style-1 label{
+    margin:0;
+    padding:0;
+    display:block;
+    float: left;
+    font-weight: bold;
+}
+
+
+.areas{
+    position: relative;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: left;
+    width: 120px;
+}
+
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+
+
+
+/*TIPOGRAFIA*/
+
+.conteudo h1 {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+.conteudo p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.form p {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.form h1 {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-align: center;
+}

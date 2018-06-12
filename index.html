@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meu Parceiro Imobiliário</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body>
+
+    <!--CONTAINER-->
+    <div id="container" class="container">
+
+        <!--LOGO-->
+        <div id="logo" class="logo"><img src="images/logo.png" /></div>
+
+        <!--CONTEUDO-->
+        <div id="conteudo" class="conteudo">
+            
+            <h1>Exemplo de linha</h1>
+            <p>exemplo de texto longo que pode servir de descrição para nosso serviço.</p>
+        </div>
+    </div>
+
+    <div id="form" class="form">
+            
+            <h1>Solicite um contato</h1>
+            <p>Retornaremos o mais rápido possível..</p>
+            <div class="bloco_contato">
+                    <form action="enviar_email.php" method="POST">
+                        <fieldset>
+                            <ul class="form-style-1">
+                                <li><p><label for="nome">Nome: </label><input type="text" name="nome" id="nome" class="right"></p><br></li>
+                                <li><p><label for="email">Email: </label><input type="text" name="email" id="email" class="right"></p><br></li>
+                                <li><p><label for="celular">Celular: </label><input type="text" name="celular" id="celular" class="right"></p><br></li>
+                                <li><p><label for="celular">CRECI: </label><input type="text" name="creci" id="creci" class="right"></p><br></li>
+                                <br>
+                                <br>
+                                <center>Área(s) de Atuação:</center>
+                                <br>
+                                <div id="areas" class="areas">
+                                <input type="checkbox" name="area" value="norte"> Zona Norte<br>
+                                <input type="checkbox" name="area" value="sul"> Zona Sul<br>
+                                <input type="checkbox" name="area" value="leste"> Zona Leste<br>
+                                <input type="checkbox" name="area" value="oeste"> Zona Oeste<br>
+                                <input type="checkbox" name="area" value="abc"> Grande ABC<br>
+                                <input type="checkbox" name="area" value="outras"> Outras<br>
+                                </div>
+                                <center><li><p><input type="submit" name="enviar" value="Enviar" class="botao"/></p></li></center>
+                            </ul>
+                        </fieldset>
+                    </form>
+            </div>
+    </div>
+
+
+</body>
+</html>
