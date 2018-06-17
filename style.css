@@ -61,6 +61,8 @@ html body {
     background-color: rgba(255, 255, 255, 0.5)
 }
 
+
+
 .bloco_contato{
     padding: 0;
     margin: 0;
@@ -226,4 +228,22 @@ h3 {
     margin-top: 80px;
     margin-bottom: 0;
     text-align: center;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.select-style select {
+    width: 100%; 
+    max-width: 500px;
+    height: auto;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+
+    
+}
+
+.select-style select:focus {
+    outline: none;
 }

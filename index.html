@@ -20,15 +20,15 @@
         <!--CONTEUDO-->
         <div id="conteudo" class="conteudo">
             
-            <h1>Exemplo de linha</h1>
-            <p>exemplo de texto longo que pode servir de descrição para nosso serviço.</p>
+            <h1>Meu Parceiro Imobiliario</h1>
+            <p>Seja um parceiro!</p>
         </div>
     </div>
 
     <div id="form" class="form">
             
-            <h1>Solicite um contato</h1>
-            <p>Retornaremos o mais rápido possível..</p>
+            <h1>Quer receber novidades? Cadastre-se.</h1>
+            <p></p>
             <div class="bloco_contato">
                     <form action="enviar_email.php" method="POST">
                         <fieldset>
@@ -36,26 +36,46 @@
                                 <li><p><label for="nome">Nome: </label><input type="text" name="nome" id="nome" class="right"></p><br></li>
                                 <li><p><label for="email">Email: </label><input type="text" name="email" id="email" class="right"></p><br></li>
                                 <li><p><label for="celular">Celular: </label><input type="text" name="celular" id="celular" class="right"></p><br></li>
-                                <li><p><label for="celular">CRECI: </label><input type="text" name="creci" id="creci" class="right"></p><br></li>
+                                <li><p><label for="creci">CRECI: </label><input type="text" name="creci" id="creci" class="right"></p><br></li>
+                                 <li><p><label for="Estado">Estado: </label>
+                                <div class="select-style">
+                                    <select>
+                                        <option value="acre">Acre</option>
+                                        <option value="alagoas">Alagoas</option>
+                                        <option value="amapa">Amapá</option>
+                                        <option value="amazonas">Amazonas</option>
+                                        <option value="bahia">Bahia</option>
+                                        <option value="ceara">Ceara</option>
+                                        <option value="distrito_federal">Distrito Federal</option>
+                                        <option value="espirito_santo">Espirito Santo</option>
+                                        <option value="goias">Goiás</option>
+                                        <option value="maranhao">Maranhão</option>
+                                        <option value="mato_grosso">Mato Grosso</option>
+                                        <option value="mato_grosso_do_sul">Mato Grosso do Sul</option>
+                                        <option value="minas_gerais">Minas Gerais</option>
+                                        <option value="para">Pará</option>
+                                        <option value="paraiba">Paraíba</option>
+                                        <option value="parana">Paraná</option>
+                                        <option value="pernambuco">Pernambuco</option>
+                                        <option value="piaui">Piauí</option>
+                                        <option value="rio_de_janeiro">Rio de Janeiro</option>
+                                        <option value="rio_grande_do_norte">Rio Grande do Norte</option>
+                                        <option value="rio_grande_do_sul">Rio Grande do Sul</option>
+                                        <option value="rondonia">Rondônia</option>
+                                        <option value="roraima">Roraima</option>
+                                        <option value="santa_catarina">Santa Catarina</option>
+                                        <option value="sao_paulo">São Paulo</option>
+                                        <option value="sergipe">Sergipe</option>
+                                        <option value="tocantins">Tocantins</option>
+                                    </select>
+                                </div></p><br></li>
                                 <br>
                                 <br>
-                                <center>Área(s) de Atuação:</center>
-                                <br>
-                                <div id="areas" class="areas">
-                                <input type="checkbox" name="area" value="norte"> Zona Norte<br>
-                                <input type="checkbox" name="area" value="sul"> Zona Sul<br>
-                                <input type="checkbox" name="area" value="leste"> Zona Leste<br>
-                                <input type="checkbox" name="area" value="oeste"> Zona Oeste<br>
-                                <input type="checkbox" name="area" value="abc"> Grande ABC<br>
-                                <input type="checkbox" name="area" value="outras"> Outras<br>
-                                </div>
                                 <center><li><p><input type="submit" name="enviar" value="Enviar" class="botao"/></p></li></center>
                             </ul>
                         </fieldset>
                     </form>
             </div>
     </div>
-
-
 </body>
 </html>
