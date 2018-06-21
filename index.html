@@ -10,7 +10,6 @@
 </head>
 
 <body>
-<section id="topo"></section>
 
 <div class="geral">
 
@@ -50,13 +49,12 @@
         <div id="conteudo" class="conteudo">
             
             <h1>Meu Parceiro Imobiliario</h1>
-            <p>Seja um parceiro!</p>
+            <p id="sobre">Seja um parceiro!</p>
         </div>
     </div>
 </div>
 
     <!--SESSAO 3-->
-<section id="sobre">
     <div class="sessao3" >
             <div class="blocos">
                 <i class="fab fa-algolia fa-7x"></i>
@@ -79,9 +77,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla volutpat erat, eu accumsan metus fermentum vitae. Phasellus non tortor non dui bibendum vestibulum.</p>
             </div>
     </div>
-</section>
 
-<section id="form">
+
     <div id="form" class="form">
             
             <h1>Quer receber novidades? Cadastre-se.</h1>
@@ -134,12 +131,10 @@
                     </form>
             </div>
     </div>
-</section>
 
-    
-    <a href="#topo"><button id="topoBtn" title="Topo">Topo</button></a>
+    <button onclick="topFunction()" id="topoBtn" title="Topo">Topo</button>
 
-    <!-- RODAPÉ <button onclick="topFunction()" id="topoBtn" title="Topo">Topo</button> -->
+    <!-- RODAPÉ -->
     <div class="rodape">
         <div class="rodape_container">
             <center><table>
@@ -184,7 +179,11 @@
                     document.getElementById("topoBtn").style.display = "none";
                 }
             }
+    
+            function topFunction(){
+                document.body.scrollTop = 0; // Para Safari
+                document.documentElement.scrollTop = 0; // Para Chrome, Firefoxm IE e Opera
+            }
         </script>
-        <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
