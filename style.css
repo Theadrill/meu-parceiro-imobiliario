@@ -17,11 +17,9 @@ a{
     text-decoration: none;
 }
 
-.geral {
-    min-height:100%;
-    position:relative;
-    width:100%;
 
+ul {
+    padding: 0;
 }
 
 /*LOGO_MENU*/
@@ -35,6 +33,7 @@ a{
     vertical-align: middle;
     max-width: 80px;
     height: auto;
+    margin-left: 10px;
 }
 
 
@@ -47,10 +46,11 @@ a{
     list-style-type: none;
     text-decoration: none;
     margin: 0;
+    padding: 0;
     background-color: #fff;
     overflow: hidden;
     height: 80px;
-    width: auto;
+    width: 100%;
     z-index: 110;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -84,7 +84,7 @@ a{
     position: absolute;
     margin: 0;
     padding: 0 20px;
-    line-height: 80px;
+    line-height: 70px;
     vertical-align: middle;
     right: 0;
     top: 0;
@@ -96,6 +96,7 @@ a{
     margin: 0;
     padding: 0;
     float: right;
+    clear: both;
 }
 
 .vertMenu li a{
@@ -114,7 +115,7 @@ a{
     width: 200px;
     height: auto;
     right: 0;
-    top: 80px;
+    top: 60px;
     background-color: #f2f2f2;
 }
 
@@ -129,17 +130,18 @@ a{
 }
 
 
-/*TELA*/
-@media screen and (max-width: 600px) {
-    .menuSlim {display: block}
-    #horMenu {display: none}
-}
 
 /*CONTEUDO*/
+
+.geral {
+    position:relative;
+    min-height:100%;
+}
+
 .container {
     position: relative;
     display: flex;
-    width: 100%;
+    min-width: 100%;
     height: 800px;
     flex-flow: row wrap;
     justify-content: center;
@@ -147,6 +149,9 @@ a{
     vertical-align: middle;
     background: url('images/fundo.jpg') no-repeat center center ;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    clear: both;
 }
 
 .container2 {
@@ -154,11 +159,12 @@ a{
     display: flex;
     width: 100%;
     height: 800px;
-    margin-top: 150px;
+    margin-top: 0;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
+    background: linear-gradient(to left, cornflowerblue 54%, rgba(0,0,0,0) 46%);
     
 }
 
@@ -176,6 +182,7 @@ a{
 
 .logo img{
     max-width: 250px;
+    visibility: hidden;
 }
 
 .conteudo {
@@ -187,6 +194,7 @@ a{
     max-width: 300px;
     height: 300px;
     margin: 0px 30px 60px 30px;
+    visibility: hidden;
 }
 
 /*Sessão 3 - Blocos*/
@@ -201,6 +209,7 @@ a{
     background-color: cornflowerblue;
     text-align: center;
     overflow: hidden;
+    
 }
 
 .blocos{
@@ -213,6 +222,8 @@ a{
     width: 250px;
     color: #fff;
     vertical-align: middle;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
 }
 
 .blocos p {
@@ -269,6 +280,7 @@ fieldset{
     width: auto;
     height: auto;
     background-color: cornflowerblue;
+    visibility: hidden;
 }
 
 
@@ -365,11 +377,20 @@ select{
 
 /*TIPOGRAFIA*/
 
+.conteudo b{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 54px;
+    font-weight: 100;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
 .conteudo h1 {
     color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: 54px;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 53px;
+    font-weight: 100;
     line-height: 60px;
     margin-bottom: 0;
 }
@@ -431,7 +452,7 @@ h3 {
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-    height: 220px;
+    height: 150px;
     width: 100%;
     bottom: 0px;
     background-color: cornflowerblue;
@@ -486,4 +507,16 @@ h3 {
 
 #topoBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*TELA*/
+@media screen and (max-width: 600px) {
+    .menuSlim {display: block}
+    #horMenu {display: none}
+    .container2 {background: rgba(100, 148, 237,0.7)}
+    .logo img {margin-top: 50px;}
+    .conteudo {margin-top: -100px;}
+    .menu {height: 60px; line-height: 60px;}
+    .logo_menu img{max-width: 60px; line-height: 60px;}
+    .logo_menu { line-height: 60px;}
 }

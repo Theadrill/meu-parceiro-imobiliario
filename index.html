@@ -7,11 +7,13 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
 
-<div class="geral">
+<div class="geral" id="topo">
 
     <!--CONTAINER-->
     <div id="container" class="container">
@@ -29,7 +31,7 @@
             </div>
             <div class="menuSlim" >
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()" >
-                            <i class="fas fa-bars fa-2x"></i>
+                            <i class="fas fa-bars fa-2x" style="color:cornflowerblue"></i>
                     </a>
             </div>
         </ul>
@@ -37,8 +39,8 @@
         <ul class="vertUl">
                 <div class="vertMenu" id="vertMenu">
                         
-                        <li><a href="#sobre">Sobre<i class="fas fa-info-circle" style="color: black; float:right;"></i></a></li>
-                        <li><a href="#form">Contato<i class="fas fa-phone" style="color: black; float:right;"></i></a></li>
+                        <li><a href="#sobre" onclick="myFunction()">Sobre<i class="fas fa-info-circle" style="color: black; float:right;"></i></a></li>
+                        <li><a href="#form" onclick="myFunction()">Contato<i class="fas fa-phone" style="color: black; float:right;"></i></a></li>
                 </div>
         </ul>
 
@@ -48,14 +50,14 @@
         <!--CONTEUDO-->
         <div id="conteudo" class="conteudo">
             
-            <h1>Meu Parceiro Imobiliario</h1>
-            <p id="sobre">Seja um parceiro!</p>
+            <h1>Meu <b>Parceiro</b> Imobiliario</h1>
+            <p>Seja um parceiro!</p>
         </div>
     </div>
 </div>
 
     <!--SESSAO 3-->
-    <div class="sessao3" >
+    <div class="sessao3" id="sobre">
             <div class="blocos">
                 <i class="fab fa-algolia fa-7x"></i>
                 <p><b>Teste</b></p>
@@ -132,7 +134,7 @@
             </div>
     </div>
 
-    <button onclick="topFunction()" id="topoBtn" title="Topo">Topo</button>
+    <a href="#topo"><button id="topoBtn" title="Topo">Topo</button></a>
 
     <!-- RODAPÉ -->
     <div class="rodape">
@@ -179,11 +181,13 @@
                     document.getElementById("topoBtn").style.display = "none";
                 }
             }
-    
-            function topFunction(){
-                document.body.scrollTop = 0; // Para Safari
-                document.documentElement.scrollTop = 0; // Para Chrome, Firefoxm IE e Opera
-            }
+
+            window.sr = ScrollReveal({ reset: true });
+            sr.reveal('.logo img');
+            sr.reveal('.conteudo');
+            sr.reveal('.blocos');
+            sr.reveal('fieldset');
         </script>
+        <script src="javascript.js"></script>
 </body>
 </html>
