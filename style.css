@@ -112,7 +112,7 @@ ul {
     overflow: hidden;
     list-style-type: none;
     padding: 20px;
-    width: 200px;
+    width: 100px;
     height: auto;
     right: 0;
     top: 60px;
@@ -125,7 +125,7 @@ ul {
     text-align: left;
     float: none;
     right: 0;
-    font-size: 2em;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -472,7 +472,7 @@ h3 {
     -webkit-box-sizing:border-box; /* Safari */
     color: #fff;
     font-family: 'lato';
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .rodape a{
