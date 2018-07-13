@@ -181,6 +181,11 @@
                     document.getElementById("topoBtn").style.display = "none";
                 }
             }
+    
+            function topFunction(){
+                document.body.scrollTop = 0; // Para Safari
+                document.documentElement.scrollTop = 0; // Para Chrome, Firefoxm IE e Opera
+            }
 
             window.sr = ScrollReveal({ reset: true });
             sr.reveal('.logo img');
