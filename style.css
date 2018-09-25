@@ -24,14 +24,14 @@ ul {
 
 /*LOGO_MENU*/
 .logo_menu{
-    line-height: 80px;
+    line-height: 70px;
     float: left;
     padding: 0 0px;
 }
 
 .logo_menu img{
     vertical-align: middle;
-    max-width: 80px;
+    max-width: 70px;
     height: auto;
     margin-left: 10px;
 }
@@ -49,14 +49,14 @@ ul {
     padding: 0;
     background-color: #fff;
     overflow: hidden;
-    height: 80px;
+    height: 70px;
     width: 100%;
     z-index: 110;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .menu li a{
-    padding: 0 16px;
+    padding: 0 22px;
     color: dimgray;
     font-family: lato;
 }
@@ -65,15 +65,15 @@ ul {
     padding: 0;
     margin: 0;
     float: right;
-    width: 250px;
+    width: 550px;
     height: auto;
 }
 
 #horMenu li{
     text-align: center;
-    line-height: 80px;
+    line-height: 70px;
     float: left;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 
@@ -100,7 +100,6 @@ ul {
 }
 
 .vertMenu li a{
-    
     color: black;
     font-family: lato;
 }
@@ -112,7 +111,7 @@ ul {
     overflow: hidden;
     list-style-type: none;
     padding: 20px;
-    width: 100px;
+    width: 150px;
     height: auto;
     right: 0;
     top: 60px;
@@ -125,7 +124,8 @@ ul {
     text-align: left;
     float: none;
     right: 0;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 30px;
     color: #fff;
 }
 
@@ -149,6 +149,7 @@ ul {
     vertical-align: middle;
     background: url('images/fundo.jpg') no-repeat center center ;
     background-size: cover;
+    background-color: #000;
     margin: 0;
     padding: 0;
     clear: both;
@@ -192,9 +193,40 @@ ul {
     flex-flow: row wrap;
     order: 1;
     max-width: 300px;
-    height: 300px;
+    height: 200px;
     margin: 0px 30px 60px 30px;
     visibility: hidden;
+}
+
+/*Sessão 2 - Quem Somos*/
+.sessao2{
+    position: relative;
+    display: table;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;   
+}
+
+
+
+/*Sessão 2 - Conteudo*/
+.quemsomosconteudo{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    padding: 0px;
+    top: 0px;
+    height: 380px;
+    width: 400px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    
 }
 
 /*Sessão 3 - Blocos*/
@@ -219,25 +251,43 @@ ul {
     text-align: center;
     margin: 60px 20px;
     height: 280px;
-    width: 250px;
+    width: 265px;
     color: #fff;
     vertical-align: middle;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     visibility: hidden;
 }
 
-.blocos p {
-    color: #fff;
-    font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
+/*Sessão 4 - Servicos*/
+.servicos{
+    position: relative;
+    display: table;
     margin: 0;
+    padding: 0;
+    top: 0px;
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    overflow: hidden;
+    
 }
 
-.blocos b{
-    line-height: 40px;
-    font-size: 22px;
-    color: #fff;
+.blocosServicos{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    top: 0;
+    margin: 0px 30px 90px;
+    height: 280px;
+    width: 350px;
+    color: #000;
+    vertical-align: middle;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
 }
 
 /*FORM*/
@@ -266,7 +316,7 @@ ul {
     margin: 0;
     padding: 0;
     height: auto;
-    width: 300px;
+    max-width: 600px;
     color:#000;
     vertical-align: middle;
 }
@@ -277,9 +327,9 @@ fieldset{
     margin: 0;
     padding: 10px 20px 10px 20px;
     border: none;
-    width: auto;
+    max-width: 500px;
     height: auto;
-    background-color: cornflowerblue;
+    background-color: rgba(0, 0, 0, 0.1);
     visibility: hidden;
 }
 
@@ -290,8 +340,13 @@ fieldset{
     border: none;
     color: #333;
 }
+
+.form-style-1 input[type=text]{
+    width: 500px;
+}
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-    background: #333;
+    background: cornflowerblue;
+    color: #fff;
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
@@ -306,7 +361,7 @@ fieldset{
 .form-style-1 {
     margin: 0;
     padding: 0;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     font-family: 'Lucida Sans', Arial, sans-serif;
 }
@@ -377,9 +432,27 @@ select{
 
 /*TIPOGRAFIA*/
 
+@font-face{
+    font-family: 'SansusWebissimoRegular';
+    src:url("fonts/sansus.ttf")
+}
+
+.quemsomosconteudo h1{
+    font-family: 'SansusWebissimoRegular';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #333;
+}
+
+.quemsomosconteudo p{
+    text-align: justify;
+}
+
 .conteudo b{
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'SansusWebissimoRegular';
     font-size: 54px;
     font-weight: 100;
     line-height: 60px;
@@ -388,7 +461,7 @@ select{
 
 .conteudo h1 {
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'SansusWebissimoRegular';
     font-size: 53px;
     font-weight: 100;
     line-height: 60px;
@@ -403,8 +476,61 @@ select{
     margin-left: 20px;
 }
 
+.blocos h1 {
+    color: #fff;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.blocos p {
+    color: #fff;
+    font-family: 'SansusWebissimoRegular', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.servicos h1{
+    font-family: 'SansusWebissimoRegular';
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 40px;
+    color: #111;
+}
+
+.blocosServicos b{
+    line-height: 40px;
+    font-size: 22px;
+    color: #000;
+}
+
+.blocosServicos h1 {
+    color: #000;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.blocosServicos p {
+    color: #000;
+    font-family: 'SansusWebissimoRegular', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.blocosServicos b{
+    line-height: 40px;
+    font-size: 22px;
+    color: #000;
+}
+
 .form p {
-    color: #333;
+    color: #fff;
     font-family: 'Lato', sans-serif;
     margin-bottom: 15px;
 }
@@ -416,7 +542,7 @@ h3 {
 }
 
 .form h1 {
-    color: #000;
+    color: #fff;
     font-family: 'Lato', sans-serif;
     font-size: 54px;
     font-weight: 300;
@@ -436,8 +562,6 @@ h3 {
     max-width: 500px;
     height: auto;
     font-family: 'Lucida Sans', Arial, sans-serif;
-
-    
 }
 
 .select-style select:focus {
@@ -515,8 +639,9 @@ h3 {
     #horMenu {display: none}
     .container2 {background: rgba(100, 148, 237,0.7)}
     .logo img {margin-top: 50px;}
-    .conteudo {margin-top: -100px;}
+    .conteudo {margin-top: -250px; max-width: 250px;}
     .menu {height: 60px; line-height: 60px;}
     .logo_menu img{max-width: 60px; line-height: 60px;}
     .logo_menu { line-height: 60px;}
+    .form-style-1 input[type=text]{width: 300px;}
 }
