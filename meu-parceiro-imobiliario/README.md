@@ -1,1 +1,0 @@
-# meu-parceiro-imobiliario
