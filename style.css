@@ -221,11 +221,12 @@ ul {
     margin: 20px;
     padding: 0px;
     top: 0px;
-    height: 380px;
+    height: auto;
     width: 400px;
     background-color: #fff;
     text-align: center;
     overflow: hidden;
+    vertical-align: middle;
     
 }
 
@@ -440,7 +441,7 @@ select{
 .quemsomosconteudo h1{
     font-family: 'SansusWebissimoRegular';
     text-align: center;
-    margin: 0;
+    margin: 10;
     padding: 0;
     font-size: 25px;
     color: #333;
@@ -644,4 +645,5 @@ h3 {
     .logo_menu img{max-width: 60px; line-height: 60px;}
     .logo_menu { line-height: 60px;}
     .form-style-1 input[type=text]{width: 300px;}
+    .quemsomosconteudo {width: 300px;}
 }
